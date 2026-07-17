@@ -10,7 +10,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="FastAPI CRUD",
-    description="A simple CRUD API for managing users.",
+    description="A simple CRUD API for managing users.dsfbuidsfuiw",
     version="1.0.0",
 )
 
