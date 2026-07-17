@@ -1,0 +1,61 @@
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/<username>/<repository>.git
+
+
+git push -u origin main
+
+
+
+# for the first time it will show you error like this 
+
+
+remote: Permission to DataSpoof/cidess.git denied to Mrkewl69.
+fatal: unable to access 'https://github.com/DataSpoof/cidess.git/': The requested URL returned error: 403
+
+
+
+# to resolve this 
+
+
+Go to github settings-> Developer settings
+
+Click on person access token classic-> Generate new token (classic)
+
+click on all the dropdown like 
+
+
+✅repo
+✅workflow
+✅user
+✅write:discussion
+✅admin:enterprise
+✅admin:gpg_key
+
+
+Next,
+
+
+git remote set-url origin https://<token>@github.com/<username>/<repo>
+
+For examples
+
+git remote set-url origin https://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@github.com/DataSpoof/cidess.git
+
+git fetch origin
+
+git push -f origin main
+
+
+
+
+
+
+
+
+
+
+
+
